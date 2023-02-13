@@ -1,19 +1,19 @@
-import React from 'react';
+import React,{StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
 const elem = (
-  <div>
-    <button>Click</button>
-    <h2>Hello World!</h2>
-  </div>
+  <StrictMode>
+      <App/>
+  </StrictMode>
+
 );
-root.render(
+ReactDOM.render(
  elem,
- document.getElementById('root')
+
 );
 
 
